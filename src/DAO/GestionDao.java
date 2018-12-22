@@ -56,8 +56,8 @@ public class GestionDao {
     /*Pendiente de repasar*/
     public List<Entrenador> selectAllEntrenadoresOrderedByCollections(){
         List<Entrenador> entrenadores = selectAllEntrenadores();
-        Collections.sort(entrenadores, Collections.reverseOrder());
-        
+        //Collections.sort(entrenadores, Collections.reverseOrder()); //Para ordenar descendientemente
+        Collections.sort(entrenadores); //Para ordenar ascendientemente
         return entrenadores;
     }
     

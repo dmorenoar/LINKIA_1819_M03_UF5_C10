@@ -33,8 +33,8 @@ public class LINKIA_1819_M03_UF5_C10 {
         //Testeando insertar un Entrenador
         System.out.println("!!!!!Testeando insertar entrenador!!!!!");
         insertarEntrenador(ligaDao, ash);
-        //insertarEntrenador(ligaDao, brock);
-        //insertarEntrenador(ligaDao, z);
+        insertarEntrenador(ligaDao, brock);
+        insertarEntrenador(ligaDao, z);
 
         //Testeando seleccionar todos los Entrenadores
         System.out.println("!!!!!Testeando seleccionar entrenadores desordenados!!!!!");
