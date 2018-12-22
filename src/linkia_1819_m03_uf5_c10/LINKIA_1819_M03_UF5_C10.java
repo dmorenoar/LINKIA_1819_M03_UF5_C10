@@ -50,6 +50,12 @@ public class LINKIA_1819_M03_UF5_C10 {
         for (Entrenador e : seleccionarAllEntrenadoresOrdered(ligaDao)) {
             System.out.println(e);
         }
+        //Testeando ordenar los Entrenadores con Collections
+        System.out.println("!!!!!Testeando seleccionar entrenadores ordenados con Collections!!!!!");
+         for (Entrenador e : selectAllEntrenadoresOrderedByCollections(ligaDao)) {
+            System.out.println(e);
+        }
+        
 
         //Testeando seleccionar entrenador por nombre
         //Testeando seleccionar entrenador por rango de edad
@@ -76,6 +82,10 @@ public class LINKIA_1819_M03_UF5_C10 {
 
     public static List<Entrenador> seleccionarAllEntrenadoresOrdered(GestionDao ligaDao) {
         return ligaDao.selectAllEntrenadoresOrdered();
+    }
+    
+     public static List<Entrenador> selectAllEntrenadoresOrderedByCollections(GestionDao ligaDao) {
+        return ligaDao.selectAllEntrenadoresOrderedByCollections();
     }
 
     public static List<Entrenador> seleccionarEntrenadoresByRange(GestionDao ligaDao, int edad) {

@@ -9,7 +9,7 @@ package Models;
  *
  * @author dmorenoar
  */
-public class Entrenador {
+public class Entrenador implements Comparable{
     
     private String nombre;
     private String telefono;
@@ -84,6 +84,12 @@ public class Entrenador {
     @Override
     public String toString() {
         return "Entrenador{" + "nombre=" + nombre + ", telefono=" + telefono + ", sexo=" + sexo + ", edad=" + edad + ", experiencia=" + experiencia + ", especialidad=" + especialidad + '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Entrenador aux = (Entrenador) o;
+        return this.nombre.compareTo(aux.nombre);
     }
     
     

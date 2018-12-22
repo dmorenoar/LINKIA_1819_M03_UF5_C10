@@ -54,12 +54,12 @@ public class GestionDao {
         
     }
     /*Pendiente de repasar*/
-    /*public List<Entrenador> selectAllEntrenadoresOrdered(){
+    public List<Entrenador> selectAllEntrenadoresOrderedByCollections(){
         List<Entrenador> entrenadores = selectAllEntrenadores();
         Collections.sort(entrenadores, Collections.reverseOrder());
         
         return entrenadores;
-    }*/
+    }
     
     public List<Entrenador> selectAllEntrenadoresOrdered(){
 
